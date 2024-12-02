@@ -1,0 +1,28 @@
+{
+  "name": "lms-system",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^5.3.2",
+    "graphql": "^16.9.0",
+    "graphql-request": "^7.1.0",
+    "lucide-react": "^0.428.0",
+    "next": "^13.5.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-feather": "^2.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "22.4.1",
+    "@types/react": "18.3.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.5.4"
+  }
+}

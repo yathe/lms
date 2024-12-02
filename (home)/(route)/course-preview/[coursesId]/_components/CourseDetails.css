@@ -1,0 +1,35 @@
+.course-details-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.course-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    color: #555;
+}
+
+.course-icon {
+    margin-right: 10px;
+    color: #888;
+}
+
+.course-chapters {
+    font-size: 1rem;
+}
+
+.course-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}

@@ -1,0 +1,20 @@
+.search-bar {
+    display: flex;
+    gap: 0.75rem; /* Similar to 'gap-3' */
+    font-size: 14px; /* Similar to 'text-[14px]' */
+    align-items: center;
+    border: 1px solid #d1d5db; /* Similar to 'border' */
+    padding: 0.5rem; /* Similar to 'p-2' */
+    border-radius: 0.375rem; /* Similar to 'rounded-md' */
+    background-color: #f9fafb; /* Similar to 'bg-gray-50' */
+    color: #6b7280; /* Similar to 'text-gray-500' */
+  }
+  
+  .search-bar input {
+    background-color: transparent; /* Similar to 'bg-transparent' */
+    outline: none; /* Similar to 'outline-none' */
+    border: none; /* Remove the border */
+    width: 100%; /* Make input take up available space */
+    color: inherit; /* Inherit the text color */
+  }
+  

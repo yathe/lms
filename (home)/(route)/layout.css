@@ -1,0 +1,17 @@
+.layout-container {
+    display: flex;
+  }
+  
+  .sidebar-container {
+    width: 16rem; /* Sets the width of the sidebar */
+    position: fixed; /* Fixes the sidebar to the viewport */
+    top: 0; /* Aligns the top of the sidebar with the top of the viewport */
+    bottom: 0; /* Aligns the bottom of the sidebar with the bottom of the viewport */
+    z-index: 50; /* Places the sidebar above other content */
+  }
+  
+  
+  .content-container {
+    margin-left: 16rem;
+  }
+  

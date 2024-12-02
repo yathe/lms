@@ -1,0 +1,70 @@
+/* CategoryItem Styles */
+.course-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .course-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .course-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .course-details {
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .course-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .course-author {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .course-info {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .course-icon {
+    margin-right: 5px;
+  }
+  
+  .course-chapters {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .course-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .course-status.free {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .course-status.paid {
+    background-color: #ff5722;
+    color: white;
+  }
+  

@@ -1,0 +1,83 @@
+/* Container styling */
+.chapter-nav {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #fdfdfd; /* Soft white background */
+    border: 1px solid #ddd; /* Light border for a clean frame */
+    padding: 20px;
+    border-radius: 12px; /* More rounded corners for a modern look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for a subtle depth */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Header styling */
+.chapter-header {
+    border-bottom: 2px solid #eee; /* Light underline for separation */
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.chapter-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333; /* Darker text for better contrast */
+    margin: 0;
+}
+
+.chapter-author {
+    font-size: 18px;
+    color: #777; /* Muted gray for secondary text */
+    margin: 6px 0 0;
+}
+
+/* Chapter list styling */
+.chapter-list {
+    margin-top: 15px;
+}
+
+.chapter-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 18px;
+    border-bottom: 1px solid #eee; /* Soft divider for chapters */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.chapter-item:last-child {
+    border-bottom: none; /* Remove bottom border for the last item */
+}
+
+.chapter-item:hover {
+    background-color: #f7f7f7; /* Slightly darker background for hover effect */
+    transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+.chapter-icon {
+    color: #9a9a9a; /* Lighter icon color */
+    margin-right: 14px;
+    transition: color 0.3s ease;
+    height:80px;
+    width: 95px;
+    font-size: 24px; /* Increase the font size for a larger icon */
+}
+
+.chapter-item:hover .chapter-icon {
+    color: #333; /* Darker color on hover */
+}
+
+.chapter-name {
+    font-size: 20px;
+    color: #444; /* Darker text for chapter titles */
+    margin: 0;
+    font-weight: normal;
+}
+
+.active {
+    background-color: #e0ffe0; /* Light green background for active item */
+    color: #2a7a2a; /* Dark green text for active item */
+    font-weight: bold; /* Bold text for active item */
+}
+
+.active .chapter-icon {
+    color: #2a7a2a; /* Dark green icon for active item */
+}

@@ -1,0 +1,53 @@
+/* Container for the flex layout */
+.view-course-container {
+    display: flex;
+    position: relative; /* Allows positioning the user button */
+  }
+  
+  /* Sidebar with Chapter Navigation */
+  .chapter-nav-container {
+    width: 16rem; /* Same as w-64 */
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    z-index: 50;
+  }
+  
+  /* Main content area */
+  .main-content {
+    flex-grow: 1;
+    margin-right: 2rem; /* Give space for the user button */
+  }
+  
+  /* Styling for the User Button container on the right */
+  .user-button-container {
+    position: absolute;
+    top: 20px; /* Space from the top */
+    right: 20px; /* Space from the right side */
+    z-index: 100;
+  }
+  
+  /* Classical User Button Style */
+  .user-button-container button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .user-button-container button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Full Video Player Container */
+  .full-video-player {
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  

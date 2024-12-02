@@ -1,0 +1,54 @@
+/* CoursePreview.css */
+
+.option-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.option-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.option-item h2 {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.enrollment-section {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.enrollment-section h2 {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.enrollment-button {
+    padding: 10px;
+    width: 100%;
+    background-color: #6b46c1; /* Equivalent to bg-purple-500 */
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.enrollment-button:hover {
+    background-color: #553c9a; /* Equivalent to hover:bg-purple-700 */
+}

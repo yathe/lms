@@ -1,0 +1,258 @@
+/* General Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Page Container Layout */
+.pageContainer {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #ffffff;
+  color: #333;
+  padding-top: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Content Section */
+.contentContainer {
+  margin-left: 250px;
+  padding: 30px;
+  background: #f7f7f7;
+  flex-grow: 1;
+}
+
+/* Task Form Styling */
+.taskForm {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.taskForm:hover {
+  transform: translateY(-5px);
+}
+
+.taskForm input,
+.taskForm button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.taskForm input:focus,
+.taskForm button:focus {
+  outline: none;
+  border-color: #2575fc;
+}
+
+.taskForm button {
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.taskForm button:hover {
+  background-color: #1b5dc0;
+}
+
+/* Task Card Styling */
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.taskItem {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.taskItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.taskDetails h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.taskDetails p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.taskActions {
+  display: flex;
+  gap: 10px;
+}
+
+.toggleStatusButton,
+.deleteButton {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toggleStatusButton {
+  background-color: #2575fc;
+  color: white;
+}
+
+.toggleStatusButton:hover {
+  background-color: #1b5dc0;
+  transform: scale(1.05);
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* Alert Styling */
+.alert {
+  background-color: #ffeb3b;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 220px;
+  }
+
+  .contentContainer {
+    margin-left: 220px;
+  }
+
+  .taskForm {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .taskItem {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .contentContainer {
+    margin-left: 200px;
+  }
+
+  .taskForm {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .taskItem {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  .toggleStatusButton,
+  .deleteButton {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pageContainer {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    height: auto;
+    box-shadow: none;
+    padding: 10px;
+  }
+
+  .contentContainer {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .taskForm {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .taskItem {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .toggleStatusButton,
+  .deleteButton {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

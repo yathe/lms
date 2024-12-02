@@ -1,0 +1,171 @@
+/* General Styles for Loan Page */
+.loanPage {
+  font-family: "Poppins", sans-serif;
+  padding: 30px;
+  background: linear-gradient(135deg, #f0f4f7, #dfe8ec);
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 50px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.header p {
+  font-size: 1.4rem;
+  margin-top: 15px;
+  opacity: 0.9;
+}
+
+/* Section Title */
+.tableSection h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Tables Styling */
+.loanTable,
+.schemeTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin: 0 auto;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loanTable th,
+.schemeTable th {
+  background: #2575fc;
+  color: white;
+  padding: 15px;
+  font-size: 1rem;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 4px solid #1b5dc0;
+}
+
+.loanTable td,
+.schemeTable td {
+  padding: 15px;
+  font-size: 0.95rem;
+  color: #34495e;
+  border-bottom: 1px solid #ddd;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effects for Rows */
+.loanTable tr:hover td,
+.schemeTable tr:hover td {
+  background: rgba(37, 117, 252, 0.1);
+  color: #2575fc;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+/* Links Styling */
+.loanTable a,
+.schemeTable a {
+  color: #2575fc;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.loanTable a:hover,
+.schemeTable a:hover {
+  color: #1b5dc0;
+  text-decoration: underline;
+}
+
+/* Highlighted Last Row */
+.loanTable tr:last-child td,
+.schemeTable tr:last-child td {
+  border-bottom: none;
+  font-weight: bold;
+  background: #f7faff;
+}
+
+/* Filter Button Section */
+.filterSection {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filterButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.filterButton:hover {
+  background-color: #0056b3;
+}
+
+.filterSection label {
+  display: block;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.filterSection input {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .loanTable th,
+  .schemeTable th,
+  .loanTable td,
+  .schemeTable td {
+    font-size: 0.85rem;
+    padding: 12px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1.2rem;
+  }
+
+  .filterButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .filterSection label {
+    font-size: 14px;
+  }
+
+  .filterSection input {
+    font-size: 14px;
+    padding: 6px;
+  }
+}

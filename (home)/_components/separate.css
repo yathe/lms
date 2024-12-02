@@ -1,0 +1,92 @@
+/* Sidebar container */
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    background-color: white; /* Dark slate for modern design */
+    border-right: 1px solid rgb(46, 34, 34); /* Subtle border for depth */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo container */
+.logo {
+    padding: 20px 10px;
+    border-bottom: 1px solid white;
+    text-align: center;
+    background-color: white;
+}
+
+/* Menu container */
+.menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; /* Add spacing for alignment */
+}
+
+/* Individual menu items */
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: #9ca3af; /* Muted text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+    border-radius: 0; /* Remove rounding */
+    margin: 0; /* Remove margins to prevent gaps */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Includes padding in width */
+}
+
+/* Icon inside menu items */
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    color: #9ca3af; /* Match text color */
+    transition: color 0.3s ease;
+}
+
+/* Remove underline styling from all links inside the sidebar */
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    width: 100%; /* Full width of the menu item */
+}
+
+/* Menu text styling */
+.menu-text {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    flex: 1;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add "..." for long text */
+}
+
+/* Hover and active styles */
+.menu-item:hover {
+    background-color: #374151; /* Hover background to fill width */
+    color: #ffffff;
+}
+
+.menu-item:hover .menu-icon {
+    color: #ffffff;
+}
+
+.menu-item.active {
+    background-color: #3b82f6; /* Active state color */
+    color: #ffffff;
+}
+
+.menu-item.active .menu-icon {
+    color: #ffffff;
+}
+
+/* Smooth transition for hover and active states */
+.menu-item,
+.menu-icon {
+    transition: all 0.3s ease;
+}

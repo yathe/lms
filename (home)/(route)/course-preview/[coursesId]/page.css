@@ -1,0 +1,18 @@
+.course-preview-container {
+    padding: 20px;
+}
+
+.course-preview-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.course-preview-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.course-enroll {
+    margin-top: 5px;
+}
